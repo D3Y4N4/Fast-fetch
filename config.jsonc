@@ -1,0 +1,116 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/logo2.png",
+    "type": "auto",
+    "width": 25,
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4
+    }
+  },
+  "display": {
+    "separator": "",
+    "color": {
+      "keys": "blue",
+      "title": "blue"
+    }
+  },
+  "modules": [
+    // --- system() section ---
+    {
+      "type": "custom",
+      "format": "{#34}01  system() { {#}"
+    },
+    {
+      "type": "os",
+      "key": "02    operatingSystem = ",
+      "keyColor": "blue",
+      "format": "\"{3}\""
+    },
+    {
+      "type": "kernel",
+      "key": "03    kernelVersion   = ",
+      "keyColor": "blue",
+      "format": "\"{release}\""
+    },
+    {
+      "type": "uptime",
+      "key": "04    systemUptime    = ",
+      "keyColor": "blue",
+      "format": "\"{1}d, {2}h, {3}m\""
+    },
+    {
+      "type": "dateTime",
+      "key": "05    currentTime     = ",
+      "keyColor": "blue",
+      "format": "\"{18}:{20}:{22}\""
+    },
+    {
+      "type": "packages",
+      "key": "06    installedPackages = ",
+      "keyColor": "blue",
+      "format": "\"{all} (pacman)\""
+    },
+    {
+      "type": "custom",
+      "format": "{#34}07  }{#}"
+    },
+    {
+      "type": "custom",
+      "format": "{#34}08{#}"
+    },
+
+
+    // --- hardware() section ---
+    {
+      "type": "custom",
+      "format": "{#34}09  hardware() { {#}"
+    },
+    {
+      "type": "board",
+      "key": "10    motherboard     = ",
+      "keyColor": "blue",
+      "format": "\"{name}\""
+    },
+    {
+      "type": "cpu",
+      "key": "11    processor       = ",
+      "keyColor": "blue",
+      "format": "\"{name}\""
+    },
+    {
+      "type": "gpu",
+      "key": "12    graphics        = ",
+      "keyColor": "blue",
+      "format": "\"{name}\""
+    },
+    {
+      "type": "memory",
+      "key": "13    memory          = ",
+      "keyColor": "blue",
+      "format": "\"{used} / {total}\""
+    },
+    {
+      "type": "disk",
+      "key": "14    storage         = ",
+      "keyColor": "blue",
+      "format": "\"{size-used} / {size-total} - {filesystem}\""
+    },
+    {
+      "type": "custom",
+      "format": "{#34}15  }{#}"
+    },
+    {
+      "type": "custom",
+      "format": "{#34}16{#}"
+    },
+
+    // --- Footer Comment ---
+    {
+      "type": "custom",
+      "format": "{#90}17  // I Love all the colors mixed Togather -BLACK{#}"
+    }
+  ]
+}
