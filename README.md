@@ -1,3 +1,4 @@
+
 # Code-Style Fastfetch Configuration
 
 A minimal C/C++ pseudo-code configuration layout for Fastfetch.
@@ -128,3 +129,4 @@ fastfetch
 ```
 
 To run fastfetch automatically on terminal launch, append `fastfetch` to the end of your shell startup file (`~/.bashrc`, `~/.zshrc`, or `~/.config/fish/config.fish`).
+=======
