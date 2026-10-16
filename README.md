@@ -5,7 +5,7 @@ A minimal C/C++ pseudo-code configuration layout for Fastfetch.
 
 ## Preview
 
-![Fastfetch Screenshot](assets/screenshot.png)
+![Preview](assets/screenshot.png)
 
 ```
 01  system() { {#}
